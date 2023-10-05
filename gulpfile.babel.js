@@ -187,5 +187,6 @@ gulp.task('release', done=> {
   gulp.src('./dist/shooting.js').pipe(gulp.dest('./docs/dist/'));
   gulp.src('./lib/requestAnimFrame.js').pipe(gulp.dest('./docs/lib/'));
   gulp.src('./lib/requestIntervals.js').pipe(gulp.dest('./docs/lib/'));
+  gulp.src('./asset/**/*').pipe(gulp.dest('./docs/asset/'));
   done();
 });
