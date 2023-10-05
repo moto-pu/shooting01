@@ -16,9 +16,9 @@
     "safari >=7"
   ],
   "scripts": {
-    "watch": "cross-env NODE_ENV=gulp gulp watch",
-    "build": "cross-env NODE_ENV=gulpProd gulp build_localSync",
-    "gulp": "cross-env NODE_ENV=gulp gulp",
+    "watch": "NODE_OPTIONS='--openssl-legacy-provider' cross-env NODE_ENV=gulp gulp watch",
+    "build": "NODE_OPTIONS='--openssl-legacy-provider' cross-env NODE_ENV=gulpProd gulp build",
+    "gulp": "NODE_OPTIONS='--openssl-legacy-provider' cross-env NODE_ENV=gulp gulp",
     "flow": "flow",
     "test": "jest --no-cache --no-watchman"
   },
@@ -127,7 +127,7 @@
     "mini-css-extract-plugin": "0.9.0",
     "minimist": "1.2.5",
     "node-notifier": "7.0.0",
-    "node-sass": "4.14.1",
+    "node-sass": "^9.0.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "postcss-flexbugs-fixes": "4.2.1",
     "postcss-loader": "3.0.0",
