@@ -181,3 +181,11 @@ gulp.task('watch-win',
     'browserSyncInit',
     gulp.parallel('buildJs', 'watchJs'),
     done=>done()));
+
+gulp.task('release', done=> {
+  gulp.src('./index.html').pipe(gulp.dest('./docs/'));
+  gulp.src('./dist/shooting.js').pipe(gulp.dest('./docs/dist/'));
+  gulp.src('./lib/requestAnimFrame.js').pipe(gulp.dest('./docs/lib/'));
+  gulp.src('./lib/requestIntervals.js').pipe(gulp.dest('./docs/lib/'));
+  done();
+});

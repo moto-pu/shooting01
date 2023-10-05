@@ -20,7 +20,8 @@
     "build": "NODE_OPTIONS='--openssl-legacy-provider' cross-env NODE_ENV=gulpProd gulp build",
     "gulp": "NODE_OPTIONS='--openssl-legacy-provider' cross-env NODE_ENV=gulp gulp",
     "flow": "flow",
-    "test": "jest --no-cache --no-watchman"
+    "test": "jest --no-cache --no-watchman",
+    "release": "NODE_ENV=gulpProd gulp release"
   },
   "jest": {
     "verbose": true,

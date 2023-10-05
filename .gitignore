@@ -3,3 +3,4 @@ node_modules
 !dist/.gitkeep
 cert/*
 !cert/.gitkeep
+!docs/dist/*
